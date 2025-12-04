@@ -90,7 +90,7 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "mariadb-server, php8.3-openssl, php8.3-json, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-simplexml, php8.3-pdo, php8.3-pdo_mysql, php8.3-dom, php8.3-gd php8.3-xml, php8.3-intl, php8.3-ldap, php8.3-file_info"
+    packages = "mariadb-server, php-openssl, php8.3-json, php8.3-zip, php8.3-mbstring, php8.3-curl, php8.3-simplexml, php8.3-pdo, php-pdo_mysql, php8.3-dom, php8.3-gd php8.3-xml, php8.3-intl, php8.3-ldap, php-file_info"
 
     [resources.composer]
     version = "2.8.10"
