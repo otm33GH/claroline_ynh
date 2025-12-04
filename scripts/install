@@ -40,8 +40,9 @@ chown -R "$app:www-data" "$install_dir"
 #=================================================
 
 pushd "$install_dir"
+ynh_composer_exec install --no-dev
 
-composer install --no-dev --optimize-autoloader
+$YNH_COMPOSER install --no-dev --optimize-autoloader
 npm install --legacy-peer-deps
 
 npm run webpack
