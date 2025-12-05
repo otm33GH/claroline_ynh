@@ -3,3 +3,4 @@ parameters:
     database_name: __DB_NAME__
     database_user: __DB_USER__
     database_password: __DB_PWD__
+    secret: __SECRET_KEY__
