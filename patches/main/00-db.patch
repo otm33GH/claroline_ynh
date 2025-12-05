@@ -11,3 +11,4 @@
  
    test_database_driver: '%database_driver%'
    test_database_host: '%database_host%'
+
