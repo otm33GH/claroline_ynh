@@ -2,4 +2,4 @@ parameters:
     database_host: 127.0.0.1
     database_name: __DB_NAME__
     database_user: __DB_USER__
-    database_password: __DB_PASSWORD__
+    database_password: __DB_PWD__
