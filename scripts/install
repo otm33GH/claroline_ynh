@@ -46,8 +46,8 @@ pushd "$install_dir"
 
 
 # ynh_composer_exec install --no-dev
-sed -i '/"post-install-cmd"/,/]/d' composer.json
-ynh_composer_exec install --no-dev --optimize-autoloader
+
+ynh_composer_exec install --no-dev --optimize-autoloader  --no-scripts
 npm install --legacy-peer-deps
 
 npm run webpack
