@@ -29,6 +29,8 @@ ynh_setup_source --dest_dir="$install_dir"
 ynh_safe_rm  --recursive "$install_dir/config/parameters.yml.dist"
 ynh_config_add --template=".env" --destination="$install_dir/.env"
 ynh_config_add --template="parameters.yml.dist" --destination="$install_dir/config/parameters.yml.dist"
+ynh_config_add --template="parameters.yml" --destination="$install_dir/config/parameters.yml"
+
 
 
 #=================================================
@@ -48,7 +50,7 @@ pushd "$install_dir"
 
 ynh_composer_exec install --no-dev --optimize-autoloader
 npm install --legacy-peer-deps
-
+cat "$install_dir/config/parameters.yml"
 npm run webpack
 php bin/console claroline:install -vvv
 
