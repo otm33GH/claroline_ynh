@@ -67,6 +67,9 @@ yunohost service add "$app" --description="Claroline LMS" --log="/var/log/$app/$
 
 chown -R "$app:www-data" "$install_dir"
 
+popd 
+
+ynh_config_add_phpfpm 
 
 # Use logrotate to manage application logfile(s)
 # ynh_config_add_logrotate
