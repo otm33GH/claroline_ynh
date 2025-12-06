@@ -30,7 +30,6 @@ ynh_safe_rm  --recursive "$install_dir/config/parameters.yml.dist"
 ynh_config_add --template=".env" --destination="$install_dir/.env"
 ynh_config_add --template="parameters.yml.dist" --destination="$install_dir/config/parameters.yml.dist"
 
-chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -64,6 +63,7 @@ ynh_config_add_systemd
 
 yunohost service add "$app" --description="Claroline LMS" --log="/var/log/$app/$app.log"
 
+chown -R "$app:www-data" "$install_dir"
 
 
 # Use logrotate to manage application logfile(s)
