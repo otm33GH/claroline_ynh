@@ -49,7 +49,7 @@ pushd "$install_dir"
 
 # ynh_composer_exec install --no-dev
 
-ynh_composer_exec install --no-dev --optimize-autoloader
+ynh_composer_exec install --optimize-autoloader
 npm install --legacy-peer-deps
 cat "$install_dir/config/parameters.yml"
 npm run webpack
