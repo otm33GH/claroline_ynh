@@ -53,8 +53,8 @@ ynh_composer_exec install --no-dev --optimize-autoloader
 npm install --legacy-peer-deps
 cat "$install_dir/config/parameters.yml"
 npm run webpack
-#php bin/console claroline:install --env=prod -vvv
-php bin/console claroline:install -vvv
+php bin/console claroline:install --env=prod -vvv
+#php bin/console claroline:install -vvv
 
 php bin/console claroline:user:create $admin $admin $admin $password $email -a
 
