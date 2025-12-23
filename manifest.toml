@@ -96,7 +96,7 @@ ram.runtime = "50M"
     version = "2.8.10"
 
     [resources.nodejs]
-    version = "20"
+    version = "18"
 
     [resources.database]
     # This will automatically provision/deprovison a MySQL DB and store the corresponding credentials in settings $db_user, $db_name, $db_pwd
