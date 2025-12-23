@@ -46,8 +46,8 @@ ram.runtime = "50M"
     # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "domain"
 
-    [install.path]
-    default = "/claroline"
+#    [install.path]
+#    default = "/claroline"
 
     [install.init_main_permission]
     type = "group"
@@ -71,8 +71,8 @@ ram.runtime = "50M"
 
     [resources.sources.main]
 
-    url = "https://github.com/claroline/Claroline/archive/refs/tags/14.1.0.tar.gz"
-    sha256 = "5dab635eda738c1516ed5a5445e0cfc9d94d6d1da9de6be5e27c32ed8f734f0f"
+    url = "https://github.com/claroline/Claroline/archive/refs/tags/15.0.10.tar.gz"
+    sha256 = "2b079ad82ada8a34cfce9c61557c751413c15e8f7ee225097bc6b9c08b219d91"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
