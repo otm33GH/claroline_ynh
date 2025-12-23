@@ -75,15 +75,6 @@ ynh_config_add_phpfpm
 # Create a dedicated Fail2Ban config
 # ynh_config_add_fail2ban --logpath="/var/log/nginx/${domain}-error.log" --failregex="Regex to match into the log for a failed login"
 
-
-#=================================================
-# START SYSTEMD SERVICE
-#=================================================
-ynh_script_progression "Starting $app's systemd service..."
-
-# Start a systemd service
-ynh_systemctl --service="$app" --action="start"
-
 #=================================================
 # END OF SCRIPT
 #=================================================
