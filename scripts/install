@@ -61,8 +61,6 @@ php bin/console claroline:user:create $admin $admin $admin $password $email -a
 # Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
 
-yunohost service add "$app" --description="Claroline LMS" --log="/var/log/$app/$app.log"
-
 chown -R "$app:www-data" "$install_dir"
 
 popd 
