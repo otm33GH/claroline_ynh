@@ -71,8 +71,8 @@ ram.runtime = "50M"
 
     [resources.sources.main]
 
-    url = "https://github.com/claroline/Claroline/archive/refs/tags/15.0.10.tar.gz"
-    sha256 = "2b079ad82ada8a34cfce9c61557c751413c15e8f7ee225097bc6b9c08b219d91"
+    url = "https://github.com/claroline/Claroline/archive/refs/tags/15.0.11.tar.gz"
+    sha256 = "2defb2cc08c69341820e4aa33b7aeda4ab702ef6366360389ede532cdc1be0f0"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
